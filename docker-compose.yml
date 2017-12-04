@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     # Replace username/repo:tag with your name and image details.
-    image: 'trekhleb/hello-docker:latest'
+    image: 'briggzay/hello-docker:latest'
     ports:
       - '80:80'
     networks:

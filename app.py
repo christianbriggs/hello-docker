@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from redis import Redis, RedisError
 
 # Connect to Redis.
@@ -21,7 +21,8 @@ def hello():
            "<b>Visits:</b> {visits}"
 
     # Replace variables from template with actual values.
-    return html.format(visits=visits)
+    # return html.format(visits=visits)
+    render_template('index.html', visits=visits)
 
 if __name__ == "__main__":
     # Run application on port 80.
