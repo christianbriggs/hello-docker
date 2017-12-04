@@ -22,7 +22,7 @@ def hello():
 
     # Replace variables from template with actual values.
     # return html.format(visits=visits)
-    render_template('index.html', visits=visits)
+    return render_template('index.html', visits=visits)
 
 if __name__ == "__main__":
     # Run application on port 80.
